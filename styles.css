@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: cyan;
+}
+h1{
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;;
+}
+div#h1{
+    border: 4px;
+    border-style: double;
+}
+
+
+/* slider */
+
+#slider {
+    height: 50vh;
+    position: relative;
+}
+#slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .9s;
+}
+#slider img.active{
+    opacity: 1;
+}
+
+.next, .previous {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next{
+    right: 1rem;
+}
+
+.previous{
+    left: 1rem;
+}
